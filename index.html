@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pizzashop</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body class="font-Muller bg-[#1E0B00]">
+    <header>
+      <nav>
+        <div class="container mx-auto py-5 px-5 sm:px-0 flex-still" data-aos="fade-down">
+          <div class="logo">
+            <img src="./imgs/logo.png" alt="" />
+          </div>
+          <ul class="flex gap-5 hidden md:flex">
+            <li
+              class="font-normal text-[17.88px] leading-[110%] text-textColor capitalize transition-all duration-500 ease-in-out hover:text-[#FFA228]"
+            >
+              <a href="">home</a>
+            </li>
+            <li
+              class="font-normal text-[17.88px] leading-[110%] text-textColor capitalize transition-all duration-500 ease-in-out hover:text-[#FFA228]"
+            >
+              <a href="">Menu</a>
+            </li>
+            <li
+              class="font-normal text-[17.88px] leading-[110%] text-textColor capitalize transition-all duration-500 ease-in-out hover:text-[#FFA228]"
+            >
+              <a href="">Events</a>
+            </li>
+            <li
+              class="font-normal text-[17.88px] leading-[110%] text-textColor capitalize transition-all duration-500 ease-in-out hover:text-[#FFA228]"
+            >
+              <a href="">About us</a>
+            </li>
+          </ul>
+          <div class="btns flex gap-5 items-center">
+            <button class="btn-still hidden sm:flex">Log in</button>
+            <div
+              class="w-7 h-7 md:w-10 md:h-10 rounded-full bg-linear-to-r from-[#FE9C1C] to-[#FF5D29] flex items-center justify-center cursor-pointer transition-all duration-500 hover:scale-97"
+            >
+              <i
+                class="text-mainColor text-[15px] md:text-[18px] fa-solid fa-bag-shopping"
+              ></i>
+            </div>
+            <div class="hamburger md:hidden">
+              <i
+                class="text-[#FF612E] text-[20px] cursor-pointer transition-all duration-500 hover:text-[#FFA32B] fa-solid fa-bars"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="hero">
+        <div
+          class="container mx-auto pt-15 pb-20 px-5 sm:px-0 flex-still md:items-end flex-col-reverse md:flex-row " data-aos="fade-up"
+        >
+          <div class="info w-full md:w-1/2" >
+            <h1>
+              The Fastest <br />
+              Pizza Delivery
+            </h1>
+            <p class="mb-10">
+              We will deliver juicy pizza for your family in 30 minutes, if the
+              courier is late - <span>pizza is free!</span>
+            </p>
+            <p class="mb-5">Cooking process:</p>
+            <img class="mb-10" src="./imgs/heroImg1.png" alt="" />
+            <div class="btns flex gap-1 flex-wrap">
+              <button
+                class="btn-still py-2 text-[16.01px] md:text-[22.44px] hover:scale-100"
+              >
+                To order
+              </button>
+              <button
+                class="btn-still2 py-2 text-[16.01px] md:text-[22.44px] relative overflow-hidden after:content-[''] after:absolute after:top-0 after:left-0 after:h-full after:w-0 after:bg-linear-to-r after:from-[#FFA229] after:to-[#FF5924] after:transition-all after:duration-500 hover:after:w-full after:z-0"
+              >
+                <span class="relative z-10">Pizza-Menu</span>
+              </button>
+            </div>
+          </div>
+          <div
+            class="imgs relative w-[70%] md:w-[40%] rounded-[46px] shadow-xl/20 shadow-[#862E07]"
+          >
+            <img
+              class="w-full rounded-[46px]"
+              src="./imgs/heroImg.png"
+              alt=""
+            />
+            <img
+              class="absolute w-[30%] -top-5 md:-top-10 right-0"
+              src="./imgs/heroImg2.png"
+              alt=""
+            />
+            <img
+              class="absolute w-[30%] -bottom-5 -left-5 md:-bottom-10 md:-left-15"
+              src="./imgs/heroImg3.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="menu">
+        <div class="container mx-auto py-10 px-5 sm:px-0 overflow-hidden">
+          <h2 class="text-center" data-aos="zoom-in">Menu</h2>
+          <div
+            class="menu flex-still mb-10 flex-wrap md:justify-between justify-start gap-x-4 gap-y-4" data-aos="zoom-in"
+          >
+            <button
+              class="btn-still text-[12.23px] md:text-[20px] py-2 hover:scale-100"
+            >
+              Show All
+            </button>
+            <button
+              class="font-medium text-[12.23px] md:text-[20px] py-2 px-10 rounded-[100px] text-mainColor bg-[#210A01] shadow-xl shadow-[#260C01] relative overflow-hidden after:content-[''] after:absolute after:top-0 after:left-0 after:h-full after:w-0 after:bg-linear-to-r after:from-[#FFA229] after:to-[#FF5924] after:transition-all after:duration-500 hover:after:w-full after:z-0"
+            >
+              <span class="relative z-10">Meat</span>
+            </button>
+            <button
+              class="font-medium text-[12.23px] md:text-[20px] py-2 px-10 rounded-[100px] text-mainColor bg-[#210A01] shadow-xl shadow-[#260C01] relative overflow-hidden after:content-[''] after:absolute after:top-0 after:left-0 after:h-full after:w-0 after:bg-linear-to-r after:from-[#FFA229] after:to-[#FF5924] after:transition-all after:duration-500 hover:after:w-full after:z-0"
+            >
+              <span class="relative z-10">Vegetarian</span>
+            </button>
+            <button
+              class="font-medium text-[12.23px] md:text-[20px] py-2 px-10 rounded-[100px] text-mainColor bg-[#210A01] shadow-xl shadow-[#260C01] relative overflow-hidden after:content-[''] after:absolute after:top-0 after:left-0 after:h-full after:w-0 after:bg-linear-to-r after:from-[#FFA229] after:to-[#FF5924] after:transition-all after:duration-500 hover:after:w-full after:z-0"
+            >
+              <span class="relative z-10">Sea products</span>
+            </button>
+            <button
+              class="font-medium text-[12.23px] md:text-[20px] py-2 px-10 rounded-[100px] text-mainColor bg-[#210A01] shadow-xl shadow-[#260C01] relative overflow-hidden after:content-[''] after:absolute after:top-0 after:left-0 after:h-full after:w-0 after:bg-linear-to-r after:from-[#FFA229] after:to-[#FF5924] after:transition-all after:duration-500 hover:after:w-full after:z-0"
+            >
+              <span class="relative z-10">Mushroom</span>
+            </button>
+          </div>
+          <div
+            class="card grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 mb-10"
+          >
+            <div
+              class="box bg-[#210A01] p-5 rounded-[29.53px] shadow-lg shadow-[#250C00] flex flex-col" data-aos="fade-right"
+            >
+              <div class="imgs flex justify-center">
+                <img
+                  class="rounded-full w-1/2"
+                  src="./imgs/menuImg1.png"
+                  alt=""
+                />
+              </div>
+              <h4
+                class="font-medium text-[15.35px] md:text-[25.1px] text-center text-mainColor mt-5 mb-5"
+              >
+                Italian
+              </h4>
+              <p class="text-[8.76px] md:text-[14.32px] mb-5">
+                Filling: onion, potato, tomato, mushrooms, cheese, olives,
+                meat...
+              </p>
+              <div class="flex-still mb-5">
+                <div
+                  class="group w-6 h-6 md:w-10 md:h-10 rounded-full border border-textColor flex items-center justify-center cursor-pointer transition-all duration-500 hover:bg-[#FF5924] hover:border-[#FF5924]"
+                >
+                  <span
+                    class="font-normal text-[8.76px] md:text-[14.32px] text-textColor transition-all duration-500 group-hover:text-mainColor"
+                    >22</span
+                  >
+                </div>
+                <div
+                  class="group w-6 h-6 md:w-10 md:h-10 rounded-full flex items-center justify-center cursor-pointer transition-all duration-500 bg-linear-to-r from-[#FFA229] to-[#FF5924]"
+                >
+                  <span
+                    class="font-normal text-[8.76px] md:text-[14.32px] text-mainColor"
+                    >28</span
+                  >
+                </div>
+                <div
+                  class="group w-6 h-6 md:w-10 md:h-10 rounded-full border border-textColor flex items-center justify-center cursor-pointer transition-all duration-500 hover:bg-[#FF5924] hover:border-[#FF5924]"
+                >
+                  <span
+                    class="font-normal text-[8.76px] md:text-[14.32px] text-textColor transition-all duration-500 group-hover:text-mainColor"
+                    >33</span
+                  >
+                </div>
+              </div>
+              <button
+                class="btn-still2 text-[9.83px] md:text-[16.08px] relative overflow-hidden after:content-[''] after:absolute after:top-0 after:left-0 after:h-full after:w-0 after:bg-linear-to-r after:from-[#FFA229] after:to-[#FF5924] after:transition-all after:duration-500 hover:after:w-full after:z-0"
+              >
+                <span class="relative z-10">+ Ingridients</span>
+              </button>
+              <div class="price flex-still mb-5 mt-5">
+                <span
+                  class="font-medium text-[15.57px] md:text-[25.46px] leading-[110%] text-mainColor"
+                  >8,35 <sup>$</sup></span
+                >
+                <div class="flex items-center gap-3">
+                  <div
+                    class="w-5 h-5 rounded-full border border-textColor flex justify-center items-center"
+                  >
+                    <span class="text-textColor text-[18px] cursor-pointer"
+                      >-</span
+                    >
+                  </div>
+                  <span
+                    class="font-normal text-[15.95px] md:text-[22.82px] text-textColor"
+                    >1</span
+                  >
+                  <div
+                    class="w-5 h-5 rounded-full border bg-linear-to-r from-[#FFA229] to-[#FF5924] flex justify-center items-center cursor-pointer"
+                  >
+                    <span class="text-textColor text-[18px]">+</span>
+                  </div>
+                </div>
+              </div>
+              <button class="btn-still">Order Now</button>
+            </div>
+            <div
+              class="box bg-[#210A01] p-5 rounded-[29.53px] shadow-lg shadow-[#250C00] flex flex-col" data-aos="zoom-in-up"
+            >
+              <div class="imgs flex justify-center">
+                <img
+                  class="rounded-full w-1/2"
+                  src="./imgs/menuImg2.png"
+                  alt=""
+                />
+              </div>
+              <h4
+                class="font-medium text-[15.35px] md:text-[25.1px] text-center text-mainColor mt-5 mb-5"
+              >
+                Venecia
+              </h4>
+              <p class="text-[8.76px] md:text-[14.32px] mb-5">
+                Filling: onion, potato, tomato, mushrooms, cheese, olives,
+                meat...
+              </p>
+              <div class="flex-still mb-5">
+                <div
+                  class="group w-6 h-6 md:w-10 md:h-10 rounded-full border border-textColor flex items-center justify-center cursor-pointer transition-all duration-500 hover:bg-[#FF5924] hover:border-[#FF5924]"
+                >
+                  <span
+                    class="font-normal text-[8.76px] md:text-[14.32px] text-textColor transition-all duration-500 group-hover:text-mainColor"
+                    >22</span
+                  >
+                </div>
+                <div
+                  class="group w-6 h-6 md:w-10 md:h-10 rounded-full flex items-center justify-center cursor-pointer transition-all duration-500 bg-linear-to-r from-[#FFA229] to-[#FF5924]"
+                >
+                  <span
+                    class="font-normal text-[8.76px] md:text-[14.32px] text-mainColor"
+                    >28</span
+                  >
+                </div>
+                <div
+                  class="group w-6 h-6 md:w-10 md:h-10 rounded-full border border-textColor flex items-center justify-center cursor-pointer transition-all duration-500 hover:bg-[#FF5924] hover:border-[#FF5924]"
+                >
+                  <span
+                    class="font-normal text-[8.76px] md:text-[14.32px] text-textColor transition-all duration-500 group-hover:text-mainColor"
+                    >33</span
+                  >
+                </div>
+              </div>
+              <button
+                class="btn-still2 text-[9.83px] md:text-[16.08px] relative overflow-hidden after:content-[''] after:absolute after:top-0 after:left-0 after:h-full after:w-0 after:bg-linear-to-r after:from-[#FFA229] after:to-[#FF5924] after:transition-all after:duration-500 hover:after:w-full after:z-0"
+              >
+                <span class="relative z-10">+ Ingridients</span>
+              </button>
+              <div class="price flex-still mb-5 mt-5">
+                <span
+                  class="font-medium text-[15.57px] md:text-[25.46px] leading-[110%] text-mainColor"
+                  >7,35<sup>$</sup></span
+                >
+                <div class="flex items-center gap-3">
+                  <div
+                    class="w-5 h-5 rounded-full border border-textColor flex justify-center items-center"
+                  >
+                    <span class="text-textColor text-[18px] cursor-pointer"
+                      >-</span
+                    >
+                  </div>
+                  <span
+                    class="font-normal text-[15.95px] md:text-[22.82px] text-textColor"
+                    >1</span
+                  >
+                  <div
+                    class="w-5 h-5 rounded-full border bg-linear-to-r from-[#FFA229] to-[#FF5924] flex justify-center items-center cursor-pointer"
+                  >
+                    <span class="text-textColor text-[18px]">+</span>
+                  </div>
+                </div>
+              </div>
+              <button class="btn-still">Order Now</button>
+            </div>
+            <div
+              class="box bg-[#210A01] p-5 rounded-[29.53px] shadow-lg shadow-[#250C00] flex flex-col" data-aos="zoom-in-up"
+            >
+              <div class="imgs flex justify-center">
+                <img
+                  class="rounded-full w-1/2"
+                  src="./imgs/menuImg3.png"
+                  alt=""
+                />
+              </div>
+              <h4
+                class="font-medium text-[15.35px] md:text-[25.1px] text-center text-mainColor mt-5 mb-5"
+              >
+                Meat
+              </h4>
+              <p class="text-[8.76px] md:text-[14.32px] mb-5">
+                Filling: onion, potato, tomato, mushrooms, cheese, olives,
+                meat...
+              </p>
+              <div class="flex-still mb-5">
+                <div
+                  class="group w-6 h-6 md:w-10 md:h-10 rounded-full border border-textColor flex items-center justify-center cursor-pointer transition-all duration-500 hover:bg-[#FF5924] hover:border-[#FF5924]"
+                >
+                  <span
+                    class="font-normal text-[8.76px] md:text-[14.32px] text-textColor transition-all duration-500 group-hover:text-mainColor"
+                    >22</span
+                  >
+                </div>
+                <div
+                  class="group w-6 h-6 md:w-10 md:h-10 rounded-full flex items-center justify-center cursor-pointer transition-all duration-500 bg-linear-to-r from-[#FFA229] to-[#FF5924]"
+                >
+                  <span
+                    class="font-normal text-[8.76px] md:text-[14.32px] text-mainColor"
+                    >28</span
+                  >
+                </div>
+                <div
+                  class="group w-6 h-6 md:w-10 md:h-10 rounded-full border border-textColor flex items-center justify-center cursor-pointer transition-all duration-500 hover:bg-[#FF5924] hover:border-[#FF5924]"
+                >
+                  <span
+                    class="font-normal text-[8.76px] md:text-[14.32px] text-textColor transition-all duration-500 group-hover:text-mainColor"
+                    >33</span
+                  >
+                </div>
+              </div>
+              <button
+                class="btn-still2 text-[9.83px] md:text-[16.08px] relative overflow-hidden after:content-[''] after:absolute after:top-0 after:left-0 after:h-full after:w-0 after:bg-linear-to-r after:from-[#FFA229] after:to-[#FF5924] after:transition-all after:duration-500 hover:after:w-full after:z-0"
+              >
+                <span class="relative z-10">+ Ingridients</span>
+              </button>
+              <div class="price flex-still mb-5 mt-5">
+                <span
+                  class="font-medium text-[15.57px] md:text-[25.46px] leading-[110%] text-mainColor"
+                  >9,35 <sup>$</sup></span
+                >
+                <div class="flex items-center gap-3">
+                  <div
+                    class="w-5 h-5 rounded-full border border-textColor flex justify-center items-center"
+                  >
+                    <span class="text-textColor text-[18px] cursor-pointer"
+                      >-</span
+                    >
+                  </div>
+                  <span
+                    class="font-normal text-[15.95px] md:text-[22.82px] text-textColor"
+                    >1</span
+                  >
+                  <div
+                    class="w-5 h-5 rounded-full border bg-linear-to-r from-[#FFA229] to-[#FF5924] flex justify-center items-center cursor-pointer"
+                  >
+                    <span class="text-textColor text-[18px]">+</span>
+                  </div>
+                </div>
+              </div>
+              <button class="btn-still">Order Now</button>
+            </div>
+            <div
+              class="box bg-[#210A01] p-5 rounded-[29.53px] shadow-lg shadow-[#250C00] flex flex-col" data-aos="fade-left"
+            > 
+              <div class="imgs flex justify-center">
+                <img
+                  class="rounded-full w-1/2"
+                  src="./imgs/menuImg4.png"
+                  alt=""
+                />
+              </div>
+              <h4
+                class="font-medium text-[15.35px] md:text-[25.1px] text-center text-mainColor mt-5 mb-5"
+              >
+                Cheese
+              </h4>
+              <p class="text-[8.76px] md:text-[14.32px] mb-5">
+                Filling: onion, potato, tomato, mushrooms, cheese, olives,
+                meat...
+              </p>
+              <div class="flex-still mb-5">
+                <div
+                  class="group w-6 h-6 md:w-10 md:h-10 rounded-full border border-textColor flex items-center justify-center cursor-pointer transition-all duration-500 hover:bg-[#FF5924] hover:border-[#FF5924]"
+                >
+                  <span
+                    class="font-normal text-[8.76px] md:text-[14.32px] text-textColor transition-all duration-500 group-hover:text-mainColor"
+                    >22</span
+                  >
+                </div>
+                <div
+                  class="group w-6 h-6 md:w-10 md:h-10 rounded-full flex items-center justify-center cursor-pointer transition-all duration-500 bg-linear-to-r from-[#FFA229] to-[#FF5924]"
+                >
+                  <span
+                    class="font-normal text-[8.76px] md:text-[14.32px] text-mainColor"
+                    >28</span
+                  >
+                </div>
+                <div
+                  class="group w-6 h-6 md:w-10 md:h-10 rounded-full border border-textColor flex items-center justify-center cursor-pointer transition-all duration-500 hover:bg-[#FF5924] hover:border-[#FF5924]"
+                >
+                  <span
+                    class="font-normal text-[8.76px] md:text-[14.32px] text-textColor transition-all duration-500 group-hover:text-mainColor"
+                    >33</span
+                  >
+                </div>
+              </div>
+              <button
+                class="btn-still2 text-[9.83px] md:text-[16.08px] relative overflow-hidden after:content-[''] after:absolute after:top-0 after:left-0 after:h-full after:w-0 after:bg-linear-to-r after:from-[#FFA229] after:to-[#FF5924] after:transition-all after:duration-500 hover:after:w-full after:z-0"
+              >
+                <span class="relative z-10">+ Ingridients</span>
+              </button>
+              <div class="price flex-still mb-5 mt-5">
+                <span
+                  class="font-medium text-[15.57px] md:text-[25.46px] leading-[110%] text-mainColor"
+                  >8,35 <sup>$</sup></span
+                >
+                <div class="flex items-center gap-3">
+                  <div
+                    class="w-5 h-5 rounded-full border border-textColor flex justify-center items-center"
+                  >
+                    <span class="text-textColor text-[18px] cursor-pointer"
+                      >-</span
+                    >
+                  </div>
+                  <span
+                    class="font-normal text-[15.95px] md:text-[22.82px] text-textColor"
+                    >1</span
+                  >
+                  <div
+                    class="w-5 h-5 rounded-full border bg-linear-to-r from-[#FFA229] to-[#FF5924] flex justify-center items-center cursor-pointer"
+                  >
+                    <span class="text-textColor text-[18px]">+</span>
+                  </div>
+                </div>
+              </div>
+              <button class="btn-still">Order Now</button>
+            </div>
+          </div>
+          <div
+            class="card relative mb-10 flex justify-center items-center bg-[url('/imgs/menuBg.png')] bg-cover bg-center bg-no-repeat min-h-[30vh] md:min-h-[40vh] rounded-[34px]"
+          >
+            <!-- <img src="./imgs/menuBg.png" alt=""> -->
+            <span
+              class="font-medium text-[20px] md:text-[43.86px] leading-[110%] text-mainColor"
+              >MOST POPULAR PIZZA</span
+            >
+          </div>
+          <div
+            class="card grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5"
+          >
+            <div
+              class="box bg-[#210A01] p-5 rounded-[29.53px] shadow-lg shadow-[#250C00] flex flex-col" data-aos="fade-right"
+            >
+              <div class="imgs flex justify-center">
+                <img
+                  class="rounded-full w-1/2"
+                  src="./imgs/menuImg5.png"
+                  alt=""
+                />
+              </div>
+              <h4
+                class="font-medium text-[15.35px] md:text-[25.1px] text-center text-mainColor mt-5 mb-5"
+              >
+                Argentina
+              </h4>
+              <p class="text-[8.76px] md:text-[14.32px] mb-5">
+                Filling: onion, potato, tomato, mushrooms, cheese, olives,
+                meat...
+              </p>
+              <div class="flex-still mb-5">
+                <div
+                  class="group w-6 h-6 md:w-10 md:h-10 rounded-full border border-textColor flex items-center justify-center cursor-pointer transition-all duration-500 hover:bg-[#FF5924] hover:border-[#FF5924]"
+                >
+                  <span
+                    class="font-normal text-[8.76px] md:text-[14.32px] text-textColor transition-all duration-500 group-hover:text-mainColor"
+                    >22</span
+                  >
+                </div>
+                <div
+                  class="group w-6 h-6 md:w-10 md:h-10 rounded-full flex items-center justify-center cursor-pointer transition-all duration-500 bg-linear-to-r from-[#FFA229] to-[#FF5924]"
+                >
+                  <span
+                    class="font-normal text-[8.76px] md:text-[14.32px] text-mainColor"
+                    >28</span
+                  >
+                </div>
+                <div
+                  class="group w-6 h-6 md:w-10 md:h-10 rounded-full border border-textColor flex items-center justify-center cursor-pointer transition-all duration-500 hover:bg-[#FF5924] hover:border-[#FF5924]"
+                >
+                  <span
+                    class="font-normal text-[8.76px] md:text-[14.32px] text-textColor transition-all duration-500 group-hover:text-mainColor"
+                    >33</span
+                  >
+                </div>
+              </div>
+              <button
+                class="btn-still2 text-[9.83px] md:text-[16.08px] relative overflow-hidden after:content-[''] after:absolute after:top-0 after:left-0 after:h-full after:w-0 after:bg-linear-to-r after:from-[#FFA229] after:to-[#FF5924] after:transition-all after:duration-500 hover:after:w-full after:z-0"
+              >
+                <span class="relative z-10">+ Ingridients</span>
+              </button>
+              <div class="price flex-still mb-5 mt-5">
+                <span
+                  class="font-medium text-[15.57px] md:text-[25.46px] leading-[110%] text-mainColor"
+                  >7,35 <sup>$</sup></span
+                >
+                <div class="flex items-center gap-3">
+                  <div
+                    class="w-5 h-5 rounded-full border border-textColor flex justify-center items-center"
+                  >
+                    <span class="text-textColor text-[18px] cursor-pointer"
+                      >-</span
+                    >
+                  </div>
+                  <span
+                    class="font-normal text-[15.95px] md:text-[22.82px] text-textColor"
+                    >1</span
+                  >
+                  <div
+                    class="w-5 h-5 rounded-full border bg-linear-to-r from-[#FFA229] to-[#FF5924] flex justify-center items-center cursor-pointer"
+                  >
+                    <span class="text-textColor text-[18px]">+</span>
+                  </div>
+                </div>
+              </div>
+              <button class="btn-still">Order Now</button>
+            </div>
+            <div
+              class="box bg-[#210A01] p-5 rounded-[29.53px] shadow-lg shadow-[#250C00] flex flex-col" data-aos="zoom-in"
+            >
+              <div class="imgs flex justify-center">
+                <img
+                  class="rounded-full w-1/2"
+                  src="./imgs/menuImg6.png"
+                  alt=""
+                />
+              </div>
+              <h4
+                class="font-medium text-[15.35px] md:text-[25.1px] text-center text-mainColor mt-5 mb-5"
+              >
+                Gribnaya
+              </h4>
+              <p class="text-[8.76px] md:text-[14.32px] mb-5">
+                Filling: onion, potato, tomato, mushrooms, cheese, olives,
+                meat...
+              </p>
+              <div class="flex-still mb-5">
+                <div
+                  class="group w-6 h-6 md:w-10 md:h-10 rounded-full border border-textColor flex items-center justify-center cursor-pointer transition-all duration-500 hover:bg-[#FF5924] hover:border-[#FF5924]"
+                >
+                  <span
+                    class="font-normal text-[8.76px] md:text-[14.32px] text-textColor transition-all duration-500 group-hover:text-mainColor"
+                    >22</span
+                  >
+                </div>
+                <div
+                  class="group w-6 h-6 md:w-10 md:h-10 rounded-full flex items-center justify-center cursor-pointer transition-all duration-500 bg-linear-to-r from-[#FFA229] to-[#FF5924]"
+                >
+                  <span
+                    class="font-normal text-[8.76px] md:text-[14.32px] text-mainColor"
+                    >28</span
+                  >
+                </div>
+                <div
+                  class="group w-6 h-6 md:w-10 md:h-10 rounded-full border border-textColor flex items-center justify-center cursor-pointer transition-all duration-500 hover:bg-[#FF5924] hover:border-[#FF5924]"
+                >
+                  <span
+                    class="font-normal text-[8.76px] md:text-[14.32px] text-textColor transition-all duration-500 group-hover:text-mainColor"
+                    >33</span
+                  >
+                </div>
+              </div>
+              <button
+                class="btn-still2 text-[9.83px] md:text-[16.08px] relative overflow-hidden after:content-[''] after:absolute after:top-0 after:left-0 after:h-full after:w-0 after:bg-linear-to-r after:from-[#FFA229] after:to-[#FF5924] after:transition-all after:duration-500 hover:after:w-full after:z-0"
+              >
+                <span class="relative z-10">+ Ingridients</span>
+              </button>
+              <div class="price flex-still mb-5 mt-5">
+                <span
+                  class="font-medium text-[15.57px] md:text-[25.46px] leading-[110%] text-mainColor"
+                  >6,35<sup>$</sup></span
+                >
+                <div class="flex items-center gap-3">
+                  <div
+                    class="w-5 h-5 rounded-full border border-textColor flex justify-center items-center"
+                  >
+                    <span class="text-textColor text-[18px] cursor-pointer"
+                      >-</span
+                    >
+                  </div>
+                  <span
+                    class="font-normal text-[15.95px] md:text-[22.82px] text-textColor"
+                    >1</span
+                  >
+                  <div
+                    class="w-5 h-5 rounded-full border bg-linear-to-r from-[#FFA229] to-[#FF5924] flex justify-center items-center cursor-pointer"
+                  >
+                    <span class="text-textColor text-[18px]">+</span>
+                  </div>
+                </div>
+              </div>
+              <button class="btn-still">Order Now</button>
+            </div>
+            <div
+              class="box bg-[#210A01] p-5 rounded-[29.53px] shadow-lg shadow-[#250C00] flex flex-col" data-aos="zoom-in" 
+            >
+              <div class="imgs flex justify-center">
+                <img
+                  class="rounded-full w-1/2"
+                  src="./imgs/menuImg7.png"
+                  alt=""
+                />
+              </div>
+              <h4
+                class="font-medium text-[15.35px] md:text-[25.1px] text-center text-mainColor mt-5 mb-5"
+              >
+                Tomato
+              </h4>
+              <p class="text-[8.76px] md:text-[14.32px] mb-5">
+                Filling: onion, potato, tomato, mushrooms, cheese, olives,
+                meat...
+              </p>
+              <div class="flex-still mb-5">
+                <div
+                  class="group w-6 h-6 md:w-10 md:h-10 rounded-full border border-textColor flex items-center justify-center cursor-pointer transition-all duration-500 hover:bg-[#FF5924] hover:border-[#FF5924]"
+                >
+                  <span
+                    class="font-normal text-[8.76px] md:text-[14.32px] text-textColor transition-all duration-500 group-hover:text-mainColor"
+                    >22</span
+                  >
+                </div>
+                <div
+                  class="group w-6 h-6 md:w-10 md:h-10 rounded-full flex items-center justify-center cursor-pointer transition-all duration-500 bg-linear-to-r from-[#FFA229] to-[#FF5924]"
+                >
+                  <span
+                    class="font-normal text-[8.76px] md:text-[14.32px] text-mainColor"
+                    >28</span
+                  >
+                </div>
+                <div
+                  class="group w-6 h-6 md:w-10 md:h-10 rounded-full border border-textColor flex items-center justify-center cursor-pointer transition-all duration-500 hover:bg-[#FF5924] hover:border-[#FF5924]"
+                >
+                  <span
+                    class="font-normal text-[8.76px] md:text-[14.32px] text-textColor transition-all duration-500 group-hover:text-mainColor"
+                    >33</span
+                  >
+                </div>
+              </div>
+              <button
+                class="btn-still2 text-[9.83px] md:text-[16.08px] relative overflow-hidden after:content-[''] after:absolute after:top-0 after:left-0 after:h-full after:w-0 after:bg-linear-to-r after:from-[#FFA229] after:to-[#FF5924] after:transition-all after:duration-500 hover:after:w-full after:z-0"
+              >
+                <span class="relative z-10">+ Ingridients</span>
+              </button>
+              <div class="price flex-still mb-5 mt-5">
+                <span
+                  class="font-medium text-[15.57px] md:text-[25.46px] leading-[110%] text-mainColor"
+                  >7,35 <sup>$</sup></span
+                >
+                <div class="flex items-center gap-3">
+                  <div
+                    class="w-5 h-5 rounded-full border border-textColor flex justify-center items-center"
+                  >
+                    <span class="text-textColor text-[18px] cursor-pointer"
+                      >-</span
+                    >
+                  </div>
+                  <span
+                    class="font-normal text-[15.95px] md:text-[22.82px] text-textColor"
+                    >1</span
+                  >
+                  <div
+                    class="w-5 h-5 rounded-full border bg-linear-to-r from-[#FFA229] to-[#FF5924] flex justify-center items-center cursor-pointer"
+                  >
+                    <span class="text-textColor text-[18px]">+</span>
+                  </div>
+                </div>
+              </div>
+              <button class="btn-still">Order Now</button>
+            </div>
+            <div
+              class="box bg-[#210A01] p-5 rounded-[29.53px] shadow-lg shadow-[#250C00] flex flex-col" data-aos="fade-left"
+            >
+              <div class="imgs flex justify-center">
+                <img
+                  class="rounded-full w-1/2"
+                  src="./imgs/menuImg8.png"
+                  alt=""
+                />
+              </div>
+              <h4
+                class="font-medium text-[15.35px] md:text-[25.1px] text-center text-mainColor mt-5 mb-5"
+              >
+                Italian x2
+              </h4>
+              <p class="text-[8.76px] md:text-[14.32px] mb-5">
+                Filling: onion, potato, tomato, mushrooms, cheese, olives,
+                meat...
+              </p>
+              <div class="flex-still mb-5">
+                <div
+                  class="group w-6 h-6 md:w-10 md:h-10 rounded-full border border-textColor flex items-center justify-center cursor-pointer transition-all duration-500 hover:bg-[#FF5924] hover:border-[#FF5924]"
+                >
+                  <span
+                    class="font-normal text-[8.76px] md:text-[14.32px] text-textColor transition-all duration-500 group-hover:text-mainColor"
+                    >22</span
+                  >
+                </div>
+                <div
+                  class="group w-6 h-6 md:w-10 md:h-10 rounded-full flex items-center justify-center cursor-pointer transition-all duration-500 bg-linear-to-r from-[#FFA229] to-[#FF5924]"
+                >
+                  <span
+                    class="font-normal text-[8.76px] md:text-[14.32px] text-mainColor"
+                    >28</span
+                  >
+                </div>
+                <div
+                  class="group w-6 h-6 md:w-10 md:h-10 rounded-full border border-textColor flex items-center justify-center cursor-pointer transition-all duration-500 hover:bg-[#FF5924] hover:border-[#FF5924]"
+                >
+                  <span
+                    class="font-normal text-[8.76px] md:text-[14.32px] text-textColor transition-all duration-500 group-hover:text-mainColor"
+                    >33</span
+                  >
+                </div>
+              </div>
+              <button
+                class="btn-still2 text-[9.83px] md:text-[16.08px] relative overflow-hidden after:content-[''] after:absolute after:top-0 after:left-0 after:h-full after:w-0 after:bg-linear-to-r after:from-[#FFA229] after:to-[#FF5924] after:transition-all after:duration-500 hover:after:w-full after:z-0"
+              >
+                <span class="relative z-10">+ Ingridients</span>
+              </button>
+              <div class="price flex-still mb-5 mt-5">
+                <span
+                  class="font-medium text-[15.57px] md:text-[25.46px] leading-[110%] text-mainColor"
+                  >8,35 <sup>$</sup></span
+                >
+                <div class="flex items-center gap-3">
+                  <div
+                    class="w-5 h-5 rounded-full border border-textColor flex justify-center items-center"
+                  >
+                    <span class="text-textColor text-[18px] cursor-pointer"
+                      >-</span
+                    >
+                  </div>
+                  <span
+                    class="font-normal text-[15.95px] md:text-[22.82px] text-textColor"
+                    >1</span
+                  >
+                  <div
+                    class="w-5 h-5 rounded-full border bg-linear-to-r from-[#FFA229] to-[#FF5924] flex justify-center items-center cursor-pointer"
+                  >
+                    <span class="text-textColor text-[18px]">+</span>
+                  </div>
+                </div>
+              </div>
+              <button class="btn-still">Order Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="events">
+        <div class="container mx-auto py-10">
+          <div class="overflow-x-auto w-full">
+            <div class="card grid grid-cols-6 gap-5 min-w-[1100px]">
+                <div 
+                class="box col-span-2 relative group overflow-hidden flex flex-col justify-end" data-aos="fade-right"
+              >
+                <h2 class="mb-10 text-end">Events</h2>
+                <p class="text-[14px] md:text-[16.56px] mb-5">
+                  There are regular events in our pizzeria that will allow you
+                  to eat delicious food for a lower price!
+                </p>
+                <img
+                  class="absolute w-[30%] top-0 left-0"
+                  src="./imgs/eventIcon2.png"
+                  alt=""
+                />
+              </div>
+              <div class="box col-span-2 relative group overflow-hidden rounded-[30px]" data-aos="flip-up">
+                <img class="w-full transition-all duration-500 ease-in-out group-hover:scale-105" src="./imgs/eventsImg2.png" alt="" />
+                <div
+                  class="content w-[40%] absolute top-[35%] transition-all duration-500 -left-full group-hover:left-5"
+                >
+                  <h4
+                    class="font-medium text-[15.62px] md:text-[25.09px] leading-[110%] text-mainColor mb-10"
+                  >
+                    HOW WE COOKING
+                  </h4>
+                  <button class="btn-still py-1 w-full">More</button>
+                </div>
+              </div>
+              <div class="box col-span-2 relative group overflow-hidden rounded-[30px]" data-aos="fade-left">
+                <img class="w-full transition-all duration-500 ease-in-out group-hover:scale-105" src="./imgs/eventsImg2.png" alt="" />
+                <div
+                  class="content w-[40%] absolute top-[35%] transition-all duration-500 -left-full group-hover:left-5"
+                >
+                  <h4
+                    class="font-medium text-[15.62px] md:text-[25.09px] leading-[110%] text-mainColor mb-10"
+                  >
+                    OUR BLOG
+                  </h4>
+                  <button class="btn-still py-1 w-full">More</button>
+                </div>
+              </div>
+              <div class="box col-span-3 relative group overflow-hidden rounded-[30px]" data-aos="zoom-in">
+                <img class="w-full transition-all duration-500 ease-in-out group-hover:scale-105" src="./imgs/eventsImg3.png" alt="" />
+                <div
+                  class="content w-[30%] absolute top-[35%] transition-all duration-500 -left-full group-hover:left-5"
+                >
+                  <h4
+                    class="font-medium text-[15.62px] md:text-[25.09px] leading-[110%] text-mainColor mb-10"
+                  >
+                    TWO PIZZA FOR 1 PRICE
+                  </h4>
+                  <button class="btn-still py-1 w-full">More</button>
+                </div>
+              </div>
+              <div class="box col-span-3 relative group overflow-hidden rounded-[30px]" data-aos="zoom-in">
+                <img class="w-full transition-all duration-500 ease-in-out group-hover:scale-105" src="./imgs/eventsImg4.png" alt="" />
+                <div
+                  class="content w-[30%] absolute top-[35%] transition-all duration-500 -left-full group-hover:left-5"
+                >
+                  <h4
+                    class="font-medium text-[15.62px] md:text-[25.09px] leading-[110%] text-mainColor mb-10"
+                  >
+                    KITCHEN TOUR
+                  </h4>
+                  <button class="btn-still py-1 w-full">More</button>
+                </div>
+              </div>
+              <div class="box col-span-2 relative group overflow-hidden rounded-[30px]" data-aos="fade-right">
+                <img class="w-full transition-all duration-500 ease-in-out group-hover:scale-105" src="./imgs/eventsImg5.png" alt="" />
+                <div
+                  class="content w-[40%] absolute top-[35%] transition-all duration-500 -left-full group-hover:left-5"
+                >
+                  <h4
+                    class="font-medium text-[15.62px] md:text-[25.09px] leading-[110%] text-mainColor mb-10"
+                  >
+                    FREE COFFEE FOR 3 PIZZA
+                  </h4>
+                  <button class="btn-still py-1 w-full">More</button>
+                </div>
+              </div>
+              <div class="box col-span-2 relative group overflow-hidden rounded-[30px]" data-aos="flip-down">
+                <img class="w-full transition-all duration-500 ease-in-out group-hover:scale-105" src="./imgs/eventsImg6.png" alt="" />
+                <div
+                  class="content w-[40%] absolute top-[35%] transition-all duration-500 -left-full group-hover:left-5"
+                >
+                  <h4
+                    class="font-medium text-[15.62px] md:text-[25.09px] leading-[110%] text-mainColor mb-10"
+                  >
+                    OUR INSTAGRAM
+                  </h4>
+                  <button class="btn-still py-1 w-full">More</button>
+                </div>
+              </div>
+              <div class="box col-span-2 relative group overflow-hidden rounded-[30px]" data-aos="fade-left">
+                <img class="w-full transition-all duration-500 ease-in-out group-hover:scale-105" src="./imgs/eventsImg7.png" alt="" />
+                <div
+                  class="content w-[40%] absolute top-[35%] transition-all duration-500 -left-full group-hover:left-5"
+                >
+                  <h4
+                    class="font-medium text-[15.62px] md:text-[25.09px] leading-[110%] text-mainColor mb-10"
+                  >
+                    ARE YOU CHOOSE
+                  </h4>
+                  <button class="btn-still py-1 w-full">More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div
+          class="container mx-auto py-10 px-5 sm:px-0 flex-still flex-col-reverse md:flex-row overflow-hidden"
+        >
+          <div class="info w-full md:w-[40%]" data-aos="fade-right">
+            <h2 class="mb-5">About us</h2>
+            <p class="text-[14px] md:text-[19.56px] mb-5">
+              In just a couple of years, we have opened 6 outlets in different
+              cities: Kazan, Chelyabinsk, Ufa, Samara, Izhevsk, and in the
+              future we plan to develop the network in other major cities of
+              Russia.
+            </p>
+            <div class="imgs flex mb-5">
+              <img
+                class="w-[30%] rounded-full z-0"
+                src="./imgs/menuImg1.png"
+                alt=""
+              />
+              <img
+                class="w-[30%] rounded-full -ml-15 z-10"
+                src="./imgs/menuImg2.png"
+                alt=""
+              />
+              <img
+                class="w-[30%] rounded-full -ml-15 z-0"
+                src="./imgs/menuImg3.png"
+                alt=""
+              />
+              <img
+                class="w-[30%] rounded-full -ml-15 z-10"
+                src="./imgs/menuImg4.png"
+                alt=""
+              />
+              <img
+                class="w-[30%] rounded-full -ml-15 z-0"
+                src="./imgs/menuImg5.png"
+                alt=""
+              />
+            </div>
+            <p class="text-[14px] md:text-[19.56px]">
+              The kitchen of each point is at least: 400-500 sq. m. meters,
+              hundreds of employees, smoothly performing work in order to
+              receive / prepare / form / deliver customer orders on time.
+            </p>
+          </div>
+          <div class="imgs relative w-[70%] md:w-[40%] rounded-[46px]" data-aos="fade-left">
+            <img
+              class="w-full rounded-[46px]"
+              src="./imgs/aboutImg.png"
+              alt=""
+            />
+            <img
+              class="absolute w-[30%] -top-5 md:-top-5 right-0"
+              src="./imgs/heroImg2.png"
+              alt=""
+            />
+            <img
+              class="absolute w-[30%] bottom-0 left-0 md:-bottom-5 md:-left-5"
+              src="./imgs/heroImg3.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-[#170800]">
+      <div class="container mx-auto py-10 px-5 sm:px-0 overflow-hidden">
+        <div
+          class="card flex gap-10 md:gap-20 flex-col md:flex-row mb-10" data-aos="zoom-in"
+        >
+          <div class="box">
+            <img src="./imgs/logo.png" alt="" />
+          </div>
+          <div class="w-full flex justify-start sm:justify-between gap-5 flex-wrap">
+            <div class="box">
+              <h5>Home</h5>
+              <h6>To Order</h6>
+              <h6>About us</h6>
+              <h6>Events</h6>
+              <h6>Menu</h6>
+            </div>
+            <div class="box">
+              <h5>Events</h5>
+              <h6>3 Pizza 1 Free Coffee</h6>
+              <h6>2 Pizza for 1 Price</h6>
+              <h6>Kitchen Tour</h6>
+            </div>
+            <div class="box">
+              <h5>Menu</h5>
+              <h6>Show All</h6>
+              <h6>Seaproducts</h6>
+              <h6>Vegan</h6>
+              <h6>Meat</h6>
+            </div>
+            <div class="box">
+              <h5>About Us</h5>
+              <h6>Our History</h6>
+              <h6>Why We?</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col flex-still">
+            <h4 class="font-normal text-[14.46px] md:text-[20.88px] leading-[126%] tracking-[-2%] bg-linear-to-r from-[#FFA32B] to-[#FF612E] bg-clip-text text-transparent">+7 (937) 333-55-33</h4>
+            <div class="icon">
+                <i class=" bg-linear-to-r from-[#FFA32B] to-[#FF612E] bg-clip-text text-transparent text-[16px] md:text-[20px] cursor-pointer fa-brands fa-instagram"></i>
+                <i class=" bg-linear-to-r from-[#FFA32B] to-[#FF612E] bg-clip-text text-transparent text-[16px] md:text-[20px] cursor-pointer fa-brands fa-twitter"></i>
+                <i class=" bg-linear-to-r from-[#FFA32B] to-[#FF612E] bg-clip-text text-transparent text-[16px] md:text-[20px] cursor-pointer fa-brands fa-facebook"></i>
+            </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+  AOS.init({
+    duration:1500
+  });
+</script>
+</html>

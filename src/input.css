@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+
+@theme{
+    --font-Muller: "Montserrat", sans-serif;
+    --color-mainColor: #FFFFFF;
+    --color-textColor: #A3A3A3;
+}
+
+@layer components{
+    .flex-still{
+        @apply flex items-center justify-between gap-5;
+    }
+    .btn-still{
+        @apply font-medium text-[10.67px] md:text-[17.74px] text-mainColor py-1.5 px-10 bg-linear-to-r from-[#FE9C1C] to-[#FF5D29] rounded-[100px] cursor-pointer transition-all duration-500 hover:scale-98;
+    }
+    .btn-still2{
+        @apply font-medium text-[10.67px] md:text-[17.74px] py-1.5 px-10 border-[#FF5924] border rounded-[100px] cursor-pointer transition-all duration-500 text-[#FF5924] hover:text-white ;
+    }
+}
+@layer base{
+    p{
+        @apply font-normal text-[14px] md:text-[19.56px] text-textColor;
+    }
+    h1{
+        @apply font-extrabold text-[38px] md:text-[69.17px] leading-[110%] text-mainColor mb-10;
+    }
+    h2{
+        @apply font-extrabold text-[38px] md:text-[59.17px] leading-[110%] text-mainColor mb-5;
+    }
+    h5{
+        @apply font-normal text-[15.35px] md:text-[19.63px] leading-[126%] tracking-[-2%] text-textColor mb-5;
+    }
+    h6{
+        @apply font-normal text-[13.86px] md:text-[17.72px] leading-[126%] tracking-[-2%] text-[#515151] cursor-pointer transition-all duration-500 hover:text-[#FFA228] mb-3;
+    }
+
+}
+/* relative overflow-hidden after:content-[''] after:absolute after:top-0 after:left-0 after:h-full after:w-0 after:bg-linear-to-r after:from-[#FFA229] after:to-[#FF5924] after:transition-all after:duration-500 hover:after:w-full after:z-0 */
